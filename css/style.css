@@ -139,16 +139,10 @@ h1, h2, h3, h4, h5, h6 {
     background: #000;
 }
 
-.carousel-inner {
-    height: 100vh;
-    overflow: hie
-}
-
 #intro .carousel-item {
     margin-bottom:10vh;
-    width: 100%;
     height: 100vh;
-    background-size: contain;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-color: white;
