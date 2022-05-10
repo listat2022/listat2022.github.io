@@ -4,7 +4,7 @@ const inputs = document.querySelector("form")
 btn.addEventListener('click',()=> {
     if (isValid()){
     Email.send({
-      SecureToken:"",
+      SecureToken:"1cef1189-5417-4fc3-9fe7-47aa6cc1ea1d",
       To: "listat2022@gmail.com",
       From: "listat2022@gmail.com",
       Subject: inputs.elements["email"].value + " enviou uma mensagem através do site ListaT2022",
