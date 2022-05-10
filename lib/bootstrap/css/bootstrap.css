@@ -6043,11 +6043,23 @@ button.close {
   right: 15%;
   bottom: 20px;
   left: 15%;
-  z-index: 10;
+  z-index: 1000;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #fff;
+  color: white;
   text-align: center;
+}
+
+.carousel-caption h3:first-child {
+  animation-delay: 1s;
+}
+
+.carousel-caption h3:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.carousel-caption button {
+  animation-delay: 3s;
 }
 
 .align-baseline {
