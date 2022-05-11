@@ -85,7 +85,13 @@ Header
                 <h3 class="text-center" style="color: green; padding-bottom:15px; text-align: center;"> Envia-nos a tua
                     proposta, queremos ouvir-te!</h3>
                 <h4 style="color: grey ; padding-bottom:15px; text-align: center;">Agradecemos a tua contribuição para a nossa lista</h4>
-                <form id="contactForm" class="text-center" method="post" onsubmit="return false" name="contactForm">
+                <form action="https://formsubmit.co/listat22@gmail.com" method="POST">
+                    <input type="hidden" name="_captha" value="false">
+                    <input type="hidden" name="_subject" value="Novo Email">
+                    <input type="text" name="name" placeholder="A sua mensagem" required>
+                    <button type="submit">Enviar</button>
+                </form>
+                <!-- <form id="contactForm" class="text-center" method="post" onsubmit="return false" name="contactForm">
                     <div id="error_message"></div>
                     <p class="form-group">
                         <textarea type="message" name="message" id="message" placeholder="A sua mensagem"
@@ -95,7 +101,7 @@ Header
                         <button type="button" id="send" style="background-color: grey"
                             class="text-center btn btn-secondary btn-xl text-uppercase">Enviar</button>
                     </div>
-                </form>
+                </form> -->
             </div>
         </div>
     </section>
@@ -180,10 +186,10 @@ Footer
     <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">  </script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js">  </script> -->
     <!-- Template Main Javascript File -->
     <script src="js/main.js" defer></script>
-    <script src="js/sugestions_form.js"></script>
+    <!-- <script src="js/sugestions_form.js"></script> -->
 
 </body>
 
