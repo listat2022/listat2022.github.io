@@ -129,19 +129,30 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+@media (max-width: 415px) {
+    .button-inner {
+        display: block
+    }
+    .button-carousel{
+        display: none;
+    }
+
+    #header #logo img, #header2 #logo img {
+        max-height: 40px;
+    }
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
 #intro {
     display: table;
     width: 100%;
-    height: 100vh;
     background: #000;
 }
 
 #intro .carousel-item {
     margin-bottom:10vh;
-    height: 100vh;
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -168,6 +179,18 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     right: 0;
+}
+
+@media (max-width: 1000px) {
+    #intro {
+        padding-top: 90px;
+    }
+}
+
+@media (max-width: 870px) {
+    .caption-container {
+       display: none;
+    }
 }
 
 #intro .carousel-content {
@@ -1423,7 +1446,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #contact {
-    padding: 60px 0;
+    padding: 60px 10px;
 }
 
 #contact .contact-info {
@@ -1837,3 +1860,4 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
+/*_------------------------*/
