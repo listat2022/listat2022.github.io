@@ -4,45 +4,27 @@ const inputs = document.querySelector("form")
 btn.addEventListener('click',()=> {
     if (isValid()){
     Email.send({
-      SecureToken:"1cef1189-5417-4fc3-9fe7-47aa6cc1ea1d",
+      Host: "",
+      username:"",
+      password: "",
       To: "listat2022@gmail.com",
       From: "listat2022@gmail.com",
-      Subject: inputs.elements["email"].value + " enviou uma mensagem através do site ListaT2022",
-      Body: "Nome: " + inputs.elements["name"].value + "<br>"+ "Contacto: " + inputs.elements["phone"].value + "<br>" + "Mensagem: " + inputs.elements["message"].value
+      Subject: "Recebeu uma mensagem através do site ListaT2022",
+      Body: "Mensagem: " + inputs.elements["message"].value
       }).then(document.getElementById("contactForm").reset());
 }});
 
 function isValid(){
     var valid = true;
-    var name = document.getElementById("name").value;
-    var phone = document.getElementById("phone").value;
-    var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
     var error_message = document.getElementById("error_message");
   
     error_message.style.padding = "10px";
   
     var text;
-    if(name.length <= 0){
-      text = "Nome inválido";
-      error_message.innerHTML = text;
-      error_message.style.backgroundColor = "#f44336";
-      return false;
-    }
-    if(email.indexOf("@") == -1 || email.length < 6){
-      text = "E-mail inválido";
-      error_message.innerHTML = text;
-      error_message.style.backgroundColor = "#f44336";
-      return false;
-    }
-    if(isNaN(phone) || phone.length != 9){
-      text = "Contacto inválido";
-      error_message.innerHTML = text;
-      error_message.style.backgroundColor = "#f44336";
-      return false;
-    }
+    
     if(message.length <= 0){
-      text = "Todos os campos têm de ser preenchidos";
+      text = "Escreva uma mensagem";
       error_message.innerHTML = text;
       error_message.style.backgroundColor = "#f44336";
       return false;

@@ -129,17 +129,31 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media (max-width: 415px) {
-    .button-inner {
-        display: block
-    }
+@media (max-width: 475px) {
     .button-carousel{
         display: none;
     }
-
+    
     #header #logo img, #header2 #logo img {
         max-height: 40px;
     }
+}
+
+@media (min-width: 475px) {
+    #buttons {
+        display: none;
+        height: 5vh;
+    }
+    #intro .carousel-item  {
+        margin-bottom: 10vh;
+    }
+}
+
+#buttons {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2vh;
+    background-color: black;
 }
 
 /*--------------------------------------------------------------
@@ -152,7 +166,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .carousel-item {
-    margin-bottom:10vh;
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -646,6 +659,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .container {
     position: relative;
     z-index: 10;
+    width: 100%;
 }
 
 #about .about-col {
@@ -715,6 +729,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #333;
     margin-bottom: 0;
     padding: 0 20px 20px 20px;
+}
+
+#about .vice-dep{
+    color: white;
+}
+
+#about .vice-dep:hover{
+    color: #04a56a;
 }
 
 /* Services Section
@@ -1210,7 +1232,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #team {
     background: #e6f3ed;
-    margin-top: 125px;
+    padding-top: 125px;
 }
 
 
@@ -1365,7 +1387,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #lead {
     background: transparent;
-    padding: 20px 50px;
+    
 }
 
 #lead .container {
@@ -1841,8 +1863,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #direcao {
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
     padding-bottom: 2em;
 }
 
