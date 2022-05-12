@@ -1305,6 +1305,26 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin: 0 2px;
 }
 
+#team .programa {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#team .programa .programa-title {
+    background-color: #04a56a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 4em;
+    margin-right: 4em;
+    color: #000;
+}
+
+#team .programa .programa-data {
+    text-align: right;
+    margin-right: 4em;
+}
+
+
 /* Leaders Section
 --------------------------------*/
 
